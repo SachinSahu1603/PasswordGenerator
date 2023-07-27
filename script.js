@@ -37,6 +37,11 @@ function generatepassword(password = ""){
    {
     alert("Please select the checkboxes or enter correct value")
    }
+   if(password.length>=14){
+      alert("Enter Length less than 14");
+      passwordbox.value=6;
+      return;
+   }
    console.log(password)
    display.innerText= password
 }
